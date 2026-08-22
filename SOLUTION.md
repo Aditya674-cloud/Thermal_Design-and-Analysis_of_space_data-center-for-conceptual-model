@@ -1,0 +1,24 @@
+# Solution approached by StarCloud 
+
+## 1. Power: continuous solar, no batteries needed
+In the right orbit we get near-24/7 sunlight no day or night cycle, no clouds, no atmosphere attenuating the light. 
+That means continuous solar energy without needing batteries for storage, 
+which is a huge mass/cost saving versus grid-tied or battery-backed terrestrial setups. 
+
+## 2. Cooling: radiative, passive
+No convection in vacuum, so they can't just use fans or liquid loops like Earth data centers. 
+Instead they lean on radiative cooling — large radiator panels dumping heat as infrared radiation into space. 
+This is actually the hardest unsolved engineering problem in the whole concept (radiators scale with panel area, 
+not compute, so it becomes a structural mass problem at gigawatt scale). 
+
+## 3. Scale via modular satellite "racks"
+Their physical architecture is a scale-out rack-like structure — a central skeleton with stacks of servers,
+storage, and networking switches attached, and a huge solar array feeding it.
+It's basically a data center rack philosophy translated into a satellite bus. 
+Each generation (Starcloud-1, 2, 3, 4) scales up GPU count and panel size incrementally rather than jumping straight to gigawatt scale. 
+
+## 4. Blocks and Files
+Avoiding terrestrial constraints entirely
+No permitting fights, no land footprint, no freshwater cooling draw.
+Uninterrupted solar energy, natural cooling from the vacuum of space, 
+and no terrestrial permitting constraints that's literally their one-line value prop. 
