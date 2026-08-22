@@ -8,6 +8,8 @@ This includes "a free-standing structure" or "a facility within a larger structu
 equipment. According to IBM, data centers date back to the 1940s, with the U.S. military's Electrical Numerical Integrator and Computer (ENIAC) as an early example.
 
 
+
+
 ## Why Space Data Center ? [STARCLOUD][https://www.starcloud.com/starcloud-4]
 
 Orbital data centers offer several fundamental benefits compared to their terrestrial counterparts, especially
@@ -22,5 +24,6 @@ Each of these benefits is detailed below and considered against the challenges a
 associated with deploying and operating this infrastructure in space.
 
 
+<img width="860" height="484" alt="T6h4NdLfj8SRCSHpEa3enj" src="https://github.com/user-attachments/assets/00e4a70b-2dd1-4a8c-b777-285a1f6b5e80" />
 
 
