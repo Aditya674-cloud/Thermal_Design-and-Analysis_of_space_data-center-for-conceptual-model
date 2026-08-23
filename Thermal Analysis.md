@@ -1,0 +1,91 @@
+# According to Solidworks design the following assumptions and calculations are performed 
+
+## The process is Serverbox - Thermal tube - Radiator - Space 
+
+Data:- 
+
+1. Server box = 200 * 150 * 150 mm
+2. Tube = $$\phi$$ 20 * 300 mm
+3. Radiator = 300 * 400 * 2 mm
+4. Radiator Emissivity = 0.92
+5. Server heat generation = 150 W
+6. Aluminum Thermal conductivity = 273 W/m.k
+7. Aluminum Density = 2700 $$kg/m^2$$
+8. Specific heat = 900 J/kg.k
+9. Space Temperature = 3k
+10. Stefan-Boltzman constant = $$5.67*10^-8 W/m^2.k^4$$
+11. Radiaton = Only one side of plate
+
+### 1. Converting all dimensions to SI units
+
+1. Server box = 0.2m, 0.15m, 0.15m
+   Therefore Volume of server box is = $$0.2 * 0.15 * 0.15 = 0.0045m^3$$
+
+2. Thermal tube = D = 0.02m, L = 0.3m
+3. Radiator = 0.3m, 0.4m, 0.002m
+
+### 2. Server heat generation
+
+Qgen = 150W
+
+### 3. Radiator surface area
+
+A = (0.3 * 0.4) * 4...............(We are using 4 radiator according to refrence)
+
+A = 0.48 $$m^2$$
+
+### 4. Radiator volume 
+
+Vrad = (0.3 * 0.4 * 0.002) * 4 = 0.00096 $$m^3$$
+
+### 5. Radiator mass
+
+$$\rho = 2700kg/m^3$$
+
+$$m=\rho * v$$ 
+
+m = 2700 * 0.00096 = 2.592kg
+
+### 6. Thermal radiation calculation
+
+Qrad = $$\epsilon \sigma A(Trad^4 - Tspace^4)$$
+
+where,
+
+$$\epsilon$$ = 0.92 , $$\sigma = 5.67*10^-8 W/m^2k^4$$ , $$A = 0.48m^2$$ , Tspace = 3k
+
+### 7. Assuming radiator temperature 350k (https://www.nss.org/settlement/nasa/spaceresvol2/thermalmanagement.html)
+
+Trad = 350k
+
+$$Qrad = 0.92 * 5.67*10^-8 * 0.48 *(350^4 - 3^4)$$
+
+Qrad = 375W
+
+Qrad > Qgen
+
+Result = The radiator does complete rejection from server box 
+
+<img width="1495" height="655" alt="WhatsApp Image 2026-08-21 at 21 06 30" src="https://github.com/user-attachments/assets/9249a807-c71b-442f-a6c0-04556a08b83d" />
+
+#### Thermal analysis from solidowrks 
+
+<img width="1216" height="752" alt="Screenshot 2026-08-23 150544" src="https://github.com/user-attachments/assets/afcf3085-493b-4257-895c-e1629d9b889d" />
+
+
+Unlike Ansys analysis here the mesh parameters are changed as:-
+
+<img width="1263" height="777" alt="Screenshot 2026-08-23 150051" src="https://github.com/user-attachments/assets/fec69a0c-90b3-4749-a049-e86266b29966" />
+
+<img width="1157" height="750" alt="Screenshot 2026-08-23 150123" src="https://github.com/user-attachments/assets/51021228-48ec-4938-9994-6ff0bc39c959" />
+
+<img width="1342" height="781" alt="Screenshot 2026-08-23 150246" src="https://github.com/user-attachments/assets/e102a721-3a79-44d2-8e6f-45000aa75b0c" />
+
+<img width="1296" height="796" alt="Screenshot 2026-08-23 150333" src="https://github.com/user-attachments/assets/5c202c48-c1c1-40dd-844b-05e19e8f6000" />
+
+
+
+
+
+
+
