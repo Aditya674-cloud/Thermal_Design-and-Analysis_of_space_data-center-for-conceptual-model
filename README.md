@@ -2,6 +2,9 @@
 
 ## We had project seminar in our institute and the topic chosen by me was studying how heat gets radiated from data center in space and for that i considered study of STARCLOUD-4 as a reference concept and focuses on understanding the basic principles of thermal management, particularly heat transfer through conduction and heat rejection through thermal radiation.
 
+<img width="1915" height="822" alt="recorrect temp" src="https://github.com/user-attachments/assets/1370e539-8deb-4129-97e0-2518a02f1ff3" />
+
+
 ### Objectives 
 
 1. To able to understand basic principle of space datacenter
