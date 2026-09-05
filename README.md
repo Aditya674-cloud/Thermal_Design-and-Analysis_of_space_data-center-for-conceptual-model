@@ -35,5 +35,7 @@ At the end of the project, the following are the things i learned:
 6. Gained practical exposure to ANSYS thermal analysis and interpretation of temperature and heat-flux results.
 7. Developed an understanding of the challenges involved in managing heat from future space-based computing systems.
 
+### Conclusion 
 
+This study analyzed the thermal performance of a radiator-based cooling system proposed for a space-based data center module. An initial design-stage assumption of Trad = 350K was shown to overestimate radiated heat rejection relative to the system's 150W generated heat load, prompting a direct solution of the steady-state energy balance. This yielded an equilibrium radiator temperature of 278.19 K, indicating that the radiator, as sized, provides substantial thermal margin beyond the minimum required for the stated heat load. This finding suggests the radiator area could be reduced to save mass without compromising thermal performance, or alternatively that the current design accommodates future increases in server heat dissipation.Future work should extend this analysis to include transient eclipse cycling, multi-node conductive heat paths within the data center structure, and an explicit mass-optimization study using the equilibrium relationship derived here to identify the minimum radiator area satisfying a target maximum operating temperature.
 
